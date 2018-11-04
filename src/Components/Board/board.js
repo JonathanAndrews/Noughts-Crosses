@@ -1,15 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Game from '../Game/game'
-
-function Square(props) {
-  return (
-    <button className="square" onClick={props.onClick}>
-      {props.value}
-    </button>
-  )
-}
+import Square from '../Square/square'
 
 class Board extends React.Component {
 
@@ -45,10 +34,3 @@ class Board extends React.Component {
     );
   }
 }
-
-// ========================================
-
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
