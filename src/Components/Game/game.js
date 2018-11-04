@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+
+import Board from '../Board/board'
 
 class Game extends React.Component {
   constructor(props) {
@@ -97,3 +97,5 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
+export default Game;
